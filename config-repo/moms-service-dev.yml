@@ -31,5 +31,5 @@ feign:
 env: dev
 
 customer:
-  name: 阿里巴巴
+  name: 阿里巴巴-淘宝
   phone: 666
