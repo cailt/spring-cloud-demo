@@ -32,5 +32,6 @@ eureka:
 #    health:
 #      show-details: always #健康情况-展示全部详情，否则只展示status信息
 
-hms:
-  config: test1122
+user:
+  name: 蔡灵通
+  age: 26
