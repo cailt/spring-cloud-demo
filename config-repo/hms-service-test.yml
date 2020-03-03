@@ -33,5 +33,5 @@ eureka:
 #      show-details: always #健康情况-展示全部详情，否则只展示status信息
 
 user:
-  name: 蔡灵通
+  name: 蔡灵通11
   age: 26
