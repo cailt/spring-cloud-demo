@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: moms-service
+  zipkin:
+    base-url: http://localhost:9411
+#    base-url: http://zipkin-server/
+#    discovery-client-enabled: true
+  sleuth:
+    sampler:
+      probability: 1
+
+server:
+  port: 9011
+  servlet:
+    context-path: /moms
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#配置负载均衡策略
+hms-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+feign:
+  hystrix:
+    enabled: true
+    
+env: test
+
+customer:
+  name: 阿里巴巴
+  phone: 666
